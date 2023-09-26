@@ -6,8 +6,8 @@ export async function fetchMoodleCourses() {
 	};
 
 	const url =
-		'http://localhost/MyMoodleSite/webservice/rest/server.php' +
-		'?wstoken=645e549dd644a5d2ad79b0150e519a61' +
+		'https://minnaingkoko.com/webservice/rest/server.php' +
+		'?wstoken=d5ab3c2e8f3ea59d3a2534f568031d28' +
 		'&wsfunction=core_course_get_courses' +
 		'&moodlewsrestformat=json';
 
@@ -32,7 +32,7 @@ export async function fetchCourseImages(shortname) {
 	};
 
 	const url =
-		`http://localhost/MyMoodleSite/webservice/rest/server.php?wstoken=645e549dd644a5d2ad79b0150e519a61&wsfunction=core_course_get_courses_by_field&moodlewsrestformat=json&field=shortname&value=${shortname}`;
+		`https://minnaingkoko.com/webservice/rest/server.php?wstoken=d5ab3c2e8f3ea59d3a2534f568031d28&wsfunction=core_course_get_courses_by_field&moodlewsrestformat=json&field=shortname&value=${shortname}`;
 
 	try {
 		const response = await fetch(url, requestOptions);
@@ -58,7 +58,7 @@ export async function fetchCourseImage(imageUrl) {
 
 
 	const url =
-		`${imageUrl}?token=645e549dd644a5d2ad79b0150e519a61`;
+		`${imageUrl}?token=d5ab3c2e8f3ea59d3a2534f568031d28`;
 
 	return url;
 }
