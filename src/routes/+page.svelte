@@ -172,13 +172,14 @@
       border-radius: 4px;
       padding: 1rem;
       margin: 1rem;
-      width: calc(33.333% - 2rem); /* Adjust the width to occupy 1/3 of the container width */
+      width: 350px; /* Adjust the width to occupy 1/3 of the container width */
       box-sizing: border-box; /* Ensure padding and border are included in the width calculation */
     }
 
     .course-card img {
-      max-width: 100%;
-      height: auto;
+      width: 350px;
+      height: 250px;
+	  object-fit: cover;
       margin-bottom: 1rem;
     }
 
