@@ -31,8 +31,7 @@ export async function fetchCourseImages(shortname) {
 		redirect: 'follow'
 	};
 
-	const url =
-		`https://minnaingkoko.com/webservice/rest/server.php?wstoken=d5ab3c2e8f3ea59d3a2534f568031d28&wsfunction=core_course_get_courses_by_field&moodlewsrestformat=json&field=shortname&value=${shortname}`;
+	const url = `https://minnaingkoko.com/webservice/rest/server.php?wstoken=d5ab3c2e8f3ea59d3a2534f568031d28&wsfunction=core_course_get_courses_by_field&moodlewsrestformat=json&field=shortname&value=${shortname}`;
 
 	try {
 		const response = await fetch(url, requestOptions);
@@ -56,9 +55,7 @@ export async function fetchCourseImage(imageUrl) {
 
 	let image; // Store the image URL here
 
-
-	const url =
-		`${imageUrl}?token=d5ab3c2e8f3ea59d3a2534f568031d28`;
+	const url = `${imageUrl}?token=d5ab3c2e8f3ea59d3a2534f568031d28`;
 
 	return url;
 }

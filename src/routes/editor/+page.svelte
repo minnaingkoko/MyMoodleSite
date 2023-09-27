@@ -1,5 +1,5 @@
 <script>
-	import GrapeJsEditor from '../../components/GrapeJSEditor.svelte';
+	import GrapeJsEditor from '../../components/Editor/index.svelte';
 </script>
 
 <GrapeJsEditor />
