@@ -77,9 +77,9 @@
 		<div class="course-card">
 		<h3>{course.fullname}</h3>
 			{#if $image_data[index-1] !== 'none'}
-				 <img src={$image_data[index-1]} alt="course">
+				 <img src={$image_data[index-1]} alt="course" loading="lazy">
 			{:else}
-				<img src={placeholder} alt="course">
+				<img src={placeholder} alt="course" loading="lazy">
 			{/if}
 		  <p>{purify(course.summary)}</p>
 		  <a href="/courses" class="alt-button">Learn More</a>
