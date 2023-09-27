@@ -431,6 +431,7 @@ export async function getCSS() {
 		width:100%;
 		height:155px;
 		object-fit: cover;
+	  }
 	  .card-body{
 		padding:15px 15px 5px 15px;
 		color:#555;
