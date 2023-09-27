@@ -430,8 +430,7 @@ export async function getCSS() {
 	  .card-header{
 		width:100%;
 		height:155px;
-		background-size:cover;
-		background-position:center center;
+		object-fit: cover;
 	  .card-body{
 		padding:15px 15px 5px 15px;
 		color:#555;
