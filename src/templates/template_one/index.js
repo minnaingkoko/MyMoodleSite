@@ -428,26 +428,10 @@ export async function getCSS() {
 		box-shadow:0 20px 30px 0 rgba(0, 0, 0, 0.2);
 	  }
 	  .card-header{
+		width:100%;
 		height:155px;
-		background-image:url("https://via.placeholder.com/350x250/78c5d6/fff");
 		background-size:cover;
 		background-position:center center;
-	  }
-	  .card-header.ch2{
-		background-image:url("https://via.placeholder.com/350x250/459ba8/fff");
-	  }
-	  .card-header.ch3{
-		background-image:url("https://via.placeholder.com/350x250/79c267/fff");
-	  }
-	  .card-header.ch4{
-		background-image:url("https://via.placeholder.com/350x250/c5d647/fff");
-	  }
-	  .card-header.ch5{
-		background-image:url("https://via.placeholder.com/350x250/f28c33/fff");
-	  }
-	  .card-header.ch6{
-		background-image:url("https://via.placeholder.com/350x250/e868a2/fff");
-	  }
 	  .card-body{
 		padding:15px 15px 5px 15px;
 		color:#555;
