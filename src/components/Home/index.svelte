@@ -4,6 +4,7 @@
     import Footer from '../Shared/Footer.svelte'
 	import { course_data, image_data } from '../../stores/dataStore.js'
 	import placeholder from '$lib/images/placeholder.jpg';
+	import hero_background from '$lib/images/hero-background.jpg';
 
 	// Function to remove HTML tags from a string
 	function purify(html) {
@@ -61,7 +62,7 @@
 	<!-- Hero Section -->
 	<section
 		class="bg-cover bg-center bg-no-repeat text-white py-16"
-		style="background-image: url('/src/lib/images/hero-background.jpg');"
+		style="background-image: url({hero_background});"
 	>
 		<div class="text-center">
 			<h1 class="text-4xl font-bold mb-4">Welcome to Our E-Learning Platform</h1>
